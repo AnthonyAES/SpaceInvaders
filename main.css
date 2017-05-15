@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    display: none;
+}
+
+.start {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.start img {
+    margin: 3% auto;
+}
+
+.btnplay {
+    cursor: pointer;
+}
+
+/* ----------- */
+
+.life {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+
+.score {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 40;
+}
+
+.bgscore {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #4caf50;
+    z-index: 10;
+    width: 45px;
+    height: 20vh;
+}
+
+.you {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -45px;
+}
+
+.keys {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* ----------- */
+.end {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.win, .loose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.win {
+    background-color: #4caf50;
+}
+
+.loose {
+    background-color: #c62f2f;
+}
+
+h3 {
+    font-size: 700%;
+    font-family: 'ROBOTO', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+button {
+    font-size: 25px;
+    font-family: 'ROBOTO', sans-serif;
+    font-weight: bold;
+    border: none;
+    width: 17%;
+    height: 9%;
+    margin: 50px auto;
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+}
+
+button:hover {
+    filter: invert();
+}
+
+.dontshow {
+    display: none;
+}
