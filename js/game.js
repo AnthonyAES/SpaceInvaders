@@ -113,7 +113,7 @@ function ennemies() {
     var positionEnnemies = window.getComputedStyle(ennemie, null);
     var topEnnemies = parseInt(positionEnnemies.top);
     var startpos = 50;
-    var time = setInterval(attack, 200);
+    var time = setInterval(attack, 80);
     function attack() {
         if(parseInt(ennemie.style.top) > hauteur/2 + 10) {
           clearInterval(time);
@@ -123,7 +123,7 @@ function ennemies() {
         }
     }
     
-    var dTime = setInterval(deplace, 10000);
+    var dTime = setInterval(deplace, 5000);
     var randomPos = [largeur/6, (largeur/6)*1.8 + 5];
     var randomStart = randomPos[Math.floor(Math.random()*randomPos.length)];
     var gauche = largeur/6 + "px";

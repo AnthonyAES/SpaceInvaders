@@ -150,7 +150,7 @@ button:hover {
     position: absolute;
     top: 5%;
     left: 24%;
-    transition: left 5s;
+    transition: left 3s;
 }
 
 .divalien > img {
